@@ -1,0 +1,204 @@
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $primary-color;
+    color: $text-color;
+}
+
+// Navbar
+
+.nav--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $secondary-color;
+    font-family: $header-font;
+    p {
+        list-style-type: none;
+        font-size: 2rem;
+        display: inline;
+        padding: 1rem;
+        a {
+            text-decoration: none;
+            color: $secondary-text-color;
+            &:hover {
+                color: $text-color;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+// Home
+
+.section--home {
+    height: 100%;
+    text-align: center;
+    .home--subtitle {
+        font-family: $subtitle-font;
+        color: $secondary-text-color;
+        padding-top: 6vh;
+        font-size: 4rem;
+    }
+    .home--title {
+        font-family: $header-font;
+        font-size: 8rem;
+        margin: 0;
+    }
+    .home--container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2vh;
+        font-family: $text-font;
+        ul {
+            color: $secondary-text-color;
+            font-size: 2rem;
+            margin-right: 2vw;
+        }
+        img {
+            border-radius: 100px;
+            border-image: solid $secondary-text-color;
+        }
+    }
+}
+
+// About
+
+.section--about {
+    .about--container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .about--background {
+            background-color: $secondary-color;
+            width: 33%;
+            margin-left: 4vw;
+            border: solid $secondary-text-color;
+            box-shadow: 5px 5px 5px 5px #222222;
+            p {
+                font-family: $text-font;
+                padding: 5vw;
+            }
+        }
+        img {
+            border-radius: 100px;
+        }
+    }
+}
+
+// Contact
+
+.section--contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 6vh;
+    .submitMessage {
+        display: inline-block;
+        margin: 1rem;
+        padding: 1rem;
+        font-size: 1rem;
+        font-family: $text-font;
+        background-color: $secondary-color;
+        width: 30%;
+        text-align: center;
+    }
+    .form--container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5rem;
+        font-family: $text-font;
+        background-color: $secondary-color;
+        padding: 4vh;
+        border: solid $secondary-text-color;
+        box-shadow: 5px 5px 5px 5px #222222;
+        width: 50%;
+        input[type="text"], input[type="email"] {
+            margin-bottom: 2vh;
+            height: 2rem;
+            text-indent: 10px;
+            border: 2px solid #444;
+            border-radius: 5px;
+            display: block;
+            padding-top: 2vh;
+            padding-bottom: 2vh;
+            width: 80%;
+        }
+        textarea {
+            margin-bottom: 2vh;
+            border: 2px solid #444;
+            border-radius: 5px;
+            display: block;
+            resize: none;
+            font-size: 1rem;
+            width: 80%;
+            height: 6rem;
+        }
+        button {
+            padding: 1rem;
+            border: 2px solid #444;
+            border-radius: 5px;
+            &:hover {
+                background-color: #dddddd;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// Footer
+
+.section--footer {
+    background-color: $secondary-color;
+    height: 20vh;
+    padding: 1.5vw;
+}
+
+// Titles
+
+.title {
+    text-align: center;
+    font-size: 4rem;
+    font-family: $subtitle-font;
+    font-weight: 800;
+}
+
+// Card
+
+.card--container {
+    width: 25vw;
+    flex: 0 0 auto;        
+    display: flex;         
+    flex-direction: column;
+    position: relative;
+    background-color: $secondary-color;
+    border: solid $secondary-text-color;
+    padding: 1vw;
+    box-shadow: 5px 5px 5px 5px #222222;
+    .card--title {
+        font-family: $header-font;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .card--description {
+        padding-top: 1vh;
+        font-family: $text-font;
+    }
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4vw;
+    justify-content: center;
+}

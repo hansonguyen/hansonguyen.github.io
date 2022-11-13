@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@1&family=Raleway:wght@600;900&family=Rubik&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #444444;
+  color: #bbbbbb;
+}
+
+.nav--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333333;
+  font-family: "Raleway", sans-serif;
+}
+.nav--container p {
+  list-style-type: none;
+  font-size: 2rem;
+  display: inline;
+  padding: 1rem;
+}
+.nav--container p a {
+  text-decoration: none;
+  color: #111111;
+}
+.nav--container p a:hover {
+  color: #bbbbbb;
+  transition: 0.5s;
+}
+
+.section--home {
+  height: 100%;
+  text-align: center;
+}
+.section--home .home--subtitle {
+  font-family: "Fanwood Text", sans-serif;
+  color: #111111;
+  padding-top: 6vh;
+  font-size: 4rem;
+}
+.section--home .home--title {
+  font-family: "Raleway", sans-serif;
+  font-size: 8rem;
+  margin: 0;
+}
+.section--home .home--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2vh;
+  font-family: "Rubik", sans-serif;
+}
+.section--home .home--container ul {
+  color: #111111;
+  font-size: 2rem;
+  margin-right: 2vw;
+}
+.section--home .home--container img {
+  border-radius: 100px;
+  -o-border-image: solid #111111;
+     border-image: solid #111111;
+}
+
+.section--about .about--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section--about .about--container .about--background {
+  background-color: #333333;
+  width: 33%;
+  margin-left: 4vw;
+  border: solid #111111;
+  box-shadow: 5px 5px 5px 5px #222222;
+}
+.section--about .about--container .about--background p {
+  font-family: "Rubik", sans-serif;
+  padding: 5vw;
+}
+.section--about .about--container img {
+  border-radius: 100px;
+}
+
+.section--contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 6vh;
+}
+.section--contact .submitMessage {
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
+  background-color: #333333;
+  width: 30%;
+  text-align: center;
+}
+.section--contact .form--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: "Rubik", sans-serif;
+  background-color: #333333;
+  padding: 4vh;
+  border: solid #111111;
+  box-shadow: 5px 5px 5px 5px #222222;
+  width: 50%;
+}
+.section--contact .form--container input[type=text], .section--contact .form--container input[type=email] {
+  margin-bottom: 2vh;
+  height: 2rem;
+  text-indent: 10px;
+  border: 2px solid #444;
+  border-radius: 5px;
+  display: block;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  width: 80%;
+}
+.section--contact .form--container textarea {
+  margin-bottom: 2vh;
+  border: 2px solid #444;
+  border-radius: 5px;
+  display: block;
+  resize: none;
+  font-size: 1rem;
+  width: 80%;
+  height: 6rem;
+}
+.section--contact .form--container button {
+  padding: 1rem;
+  border: 2px solid #444;
+  border-radius: 5px;
+}
+.section--contact .form--container button:hover {
+  background-color: #dddddd;
+  cursor: pointer;
+}
+
+.section--footer {
+  background-color: #333333;
+  height: 20vh;
+  padding: 1.5vw;
+}
+
+.title {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Fanwood Text", sans-serif;
+  font-weight: 800;
+}
+
+.card--container {
+  width: 25vw;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #333333;
+  border: solid #111111;
+  padding: 1vw;
+  box-shadow: 5px 5px 5px 5px #222222;
+}
+.card--container .card--title {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+.card--container .card--description {
+  padding-top: 1vh;
+  font-family: "Rubik", sans-serif;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4vw;
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */
