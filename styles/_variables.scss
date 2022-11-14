@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@1&family=Raleway:wght@600;900&family=Rubik&display=swap');
 
 // Colors
-$primary-color: #444444;
-$secondary-color: #333333;
-$text-color: #bbbbbb;
-$secondary-text-color: #111111;
+$primary-color: #aec5eb; // Main BG Color/Paragraph Text Color
+$secondary-color: #3a405a; // Navbar/Card BG
+$text-color: #f9dec9; // Header text
+$secondary-text-color: #e9afa3;
+$dark-text-color: #CE7B91;
+
+$shadow: 5px 5px 5px 5px $secondary-color;
+$border: solid $secondary-text-color;
 
 // Fonts
 $header-font: 'Raleway', sans-serif;
