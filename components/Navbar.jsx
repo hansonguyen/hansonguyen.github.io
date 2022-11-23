@@ -1,11 +1,31 @@
 import React from "react"
+import { motion } from "framer-motion"
 
 export default function Navbar() {
+
     return (
       <nav className="nav--container">
-        <a className="nav--links" href="#about">About</a>
-        <a className="nav--links" href="#projects">Projects</a>
-        <a className="nav--links" href="#contact">Contact</a>
+        <motion.a className="nav--links" href="#about"
+          initial={{opacity: 0}}
+          animate={{opacity: 1}}
+          transition={{duration: 1, delay: 1.5}}
+        >
+          About
+        </motion.a>
+        <motion.a className="nav--links" href="#projects"
+          initial={{opacity: 0}}
+          animate={{opacity: 1}}
+          transition={{duration: 1, delay: 1.75}}
+        >
+          Projects
+        </motion.a>
+        <motion.a className="nav--links" href="#contact"
+          initial={{opacity: 0}}
+          animate={{opacity: 1}}
+          transition={{duration: 1, delay: 2}}
+        >
+          Contact
+        </motion.a>
       </nav>
     )
   }

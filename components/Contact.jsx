@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
+import { motion } from "framer-motion"
 
 export default function Contact() {
     const formID = "mk3Zf2W2";
@@ -56,27 +57,38 @@ export default function Contact() {
 
     return (
         <section id="contact" className="section--contact">
-            <h1 className="title">Contact</h1>
+            <motion.h1 className="title"
+                initial={{opacity: 0, scale: 0}}
+                whileInView={{opacity: 1, scale: 1}}
+            >
+                Contact
+            </motion.h1>
             {submitMessage && <div className="submitMessage">{submitMessage}</div>}
-            <form className="form--container" onSubmit={submitForm}>
+            <motion.form className="form--container" onSubmit={submitForm}
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1}}
+            >
+                <label for="name">Name</label>
                 <input 
                     type="text"
-                    placeholder="Name"
+                    id="name"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
                     required
                 />
+                <label for="email">Email</label>
                 <input 
                     type="email"
-                    placeholder="Email"
+                    id="email"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
                     required
                 />
+                <label for="message">Message!</label>
                 <textarea 
-                    placeholder="Message"
+                    id="message"
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
@@ -88,7 +100,7 @@ export default function Contact() {
                     theme="dark"
                 />
                 <button>Submit</button>
-            </form>
+            </motion.form>
         </section>
     )
 }

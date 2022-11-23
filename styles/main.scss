@@ -27,10 +27,10 @@ body {
         font-size: 2rem;
         padding: 1rem;
         text-decoration: none;
-        color: $secondary-text-color;
+        color: $text-color;
         letter-spacing: 0.5px;
         &:hover {
-            color: $text-color;
+            color: $subtitle-text-color;
             transition: 1s;
         }
     }
@@ -41,9 +41,11 @@ body {
 .section--home {
     height: 100%;
     text-align: center;
+    overflow: hidden;
     .home--subtitle {
         font-family: $subtitle-font;
-        color: $dark-text-color;
+        letter-spacing: 3px;
+        color: $subtitle-text-color;
         padding-top: 6vh;
         font-size: 4rem;
     }
@@ -68,6 +70,7 @@ body {
 // About
 
 .section--about {
+    overflow: hidden;
     .about--container {
         display: flex;
         justify-content: center;
@@ -77,11 +80,12 @@ body {
             width: 33%;
             margin-left: 4vw;
             border: $border;
+            border-radius: 10px;
             box-shadow: $shadow;
             p {
                 font-family: $text-font;
                 padding: 4vw;
-                color: $primary-color;
+                color: $text-color;
             }
         }
         img {
@@ -89,6 +93,12 @@ body {
             border: $border;
         }
     }
+}
+
+// Projects
+
+.section--projects {
+    overflow: hidden;
 }
 
 // Contact
@@ -99,6 +109,7 @@ body {
     align-items: center;
     justify-content: center;
     padding-bottom: 6vh;
+    overflow: hidden;
     .submitMessage {
         display: inline-block;
         margin: 1rem;
@@ -118,6 +129,7 @@ body {
         background-color: $secondary-color;
         padding: 4vh;
         border: $border;
+        border-radius: 10px;
         box-shadow: $shadow;
         width: 50%;
         gap: 1vh;
@@ -144,6 +156,7 @@ body {
         }
         button {
             padding: 1rem;
+            margin-top: 1rem;
             border: 2px solid #444;
             border-radius: 5px;
             &:hover {
@@ -157,6 +170,7 @@ body {
 // Footer
 
 .section--footer {
+    overflow: hidden;
     background-color: $secondary-color;
     font-family: $header-font;
     text-align: center;
@@ -169,9 +183,9 @@ body {
         padding-bottom: 2vh;
         a {
             text-decoration: none;
-            color: $secondary-text-color;
+            color: $text-color;
             &:hover {
-                color: $text-color;
+                color: $primary-color;
                 transition: 0.5s;
             }
         }
@@ -186,32 +200,164 @@ body {
 .title {
     text-align: center;
     font-size: 4rem;
-    font-family: $subtitle-font;
+    font-family: $title-font;
     font-weight: 800;
-    color: $dark-text-color;
+    color: $text-color;
 }
 
 // Card
-
-.card--container {
-    width: 25vw;
-    flex: 0 0 auto;        
-    display: flex;         
-    flex-direction: column;
-    position: relative;
-    background-color: $secondary-color;
-    border: solid $secondary-text-color;
-    padding: 1vw;
-    box-shadow: $shadow;
-    .card--title {
-        font-family: $header-font;
-        font-size: 2rem;
-        text-align: center;
+@media (min-width:320px) {
+    .card--container {
+        width: 25vw;
+        height: 30vh;
+        flex: 0 0 auto;        
+        display: flex;         
+        flex-direction: column;
+        position: relative;
+        background-color: $secondary-color;
+        border: solid $text-color;
+        border-radius: 10px;
+        padding: 1vw;
+        box-shadow: $shadow;
+        align-items: center;
+        min-height: 380px;
+        max-height: 600px;
+        .card--image {
+            height: 20vw;
+            width: 20vw;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .card--title {
+            font-family: $header-font;
+            font-size: 2rem;
+            text-align: center;
+            color: $subtitle-text-color;
+        }
+        .card--description {
+            padding-top: 1vh;
+            font-family: $text-font;
+            color: $text-color;
+        }
+        .card--link {
+            margin-top: auto;
+            .card--button {
+                padding: 0.5rem;
+                border-radius: 5px;
+                font-family: $header-font;
+                font-size: 1rem;
+                width: 6vw;
+                background-color: $subtitle-text-color;
+                &:hover {
+                    background-color: $text-color;
+                    transition: 0.3s;
+                    cursor: pointer;
+                }
+            }
+        }
     }
-    .card--description {
-        padding-top: 1vh;
-        font-family: $text-font;
-        color: $primary-color;
+} 
+
+@media (min-width:641px) {
+    .card--container {
+        width: 25vw;
+        height: 44vh;
+        flex: 0 0 auto;        
+        display: flex;         
+        flex-direction: column;
+        position: relative;
+        background-color: $secondary-color;
+        border: solid $text-color;
+        border-radius: 10px;
+        padding: 1vw;
+        box-shadow: $shadow;
+        align-items: center;
+        min-height: 500px;
+        max-height: 570px;
+        .card--image {
+            height: 20vw;
+            width: 20vw;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .card--title {
+            font-family: $header-font;
+            font-size: 2rem;
+            text-align: center;
+            color: $subtitle-text-color;
+        }
+        .card--description {
+            padding-top: 1vh;
+            font-family: $text-font;
+            color: $text-color;
+        }
+        .card--link {
+            margin-top: auto;
+            .card--button {
+                padding: 0.5rem;
+                border-radius: 5px;
+                font-family: $header-font;
+                font-size: 1rem;
+                width: 6vw;
+                background-color: $subtitle-text-color;
+                &:hover {
+                    background-color: $text-color;
+                    transition: 0.3s;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+} 
+
+@media (min-width:1281px) {
+    .card--container {
+        width: 25vw;
+        height: 55vh;
+        flex: 0 0 auto;        
+        display: flex;         
+        flex-direction: column;
+        position: relative;
+        background-color: $secondary-color;
+        border: solid $text-color;
+        border-radius: 10px;
+        padding: 1vw;
+        box-shadow: $shadow;
+        align-items: center;
+        .card--image {
+            height: 20vw;
+            width: 20vw;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .card--title {
+            font-family: $header-font;
+            font-size: 2rem;
+            text-align: center;
+            color: $subtitle-text-color;
+        }
+        .card--description {
+            padding-top: 1vh;
+            font-family: $text-font;
+            color: $text-color;
+        }
+        .card--link {
+            margin-top: auto;
+            .card--button {
+                padding: 0.5rem;
+                min-width: 5.5vw;
+                border-radius: 5px;
+                font-family: $header-font;
+                font-size: 1rem;
+                width: 6vw;
+                background-color: $subtitle-text-color;
+                &:hover {
+                    background-color: $text-color;
+                    transition: 0.3s;
+                    cursor: pointer;
+                }
+            }
+        }
     }
 }
 

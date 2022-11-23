@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@1&family=Raleway:wght@600;900&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@1&family=Montserrat:wght@700&family=Raleway:wght@600;900&family=Rubik&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,15 +7,15 @@
 }
 
 body {
-  background-color: #aec5eb;
-  color: #f9dec9;
+  background-color: #3a506b;
+  color: #dddddd;
 }
 
 .nav--container {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #3a405a;
+  background-color: #0b132b;
   font-family: "Raleway", sans-serif;
   list-style-type: none;
   font-size: 2rem;
@@ -25,21 +25,23 @@ body {
   font-size: 2rem;
   padding: 1rem;
   text-decoration: none;
-  color: #e9afa3;
+  color: #dddddd;
   letter-spacing: 0.5px;
 }
 .nav--container .nav--links:hover {
-  color: #f9dec9;
+  color: #ffbc42;
   transition: 1s;
 }
 
 .section--home {
   height: 100%;
   text-align: center;
+  overflow: hidden;
 }
 .section--home .home--subtitle {
   font-family: "Fanwood Text", sans-serif;
-  color: #CE7B91;
+  letter-spacing: 3px;
+  color: #ffbc42;
   padding-top: 6vh;
   font-size: 4rem;
 }
@@ -57,29 +59,37 @@ body {
 }
 .section--home .home--container img {
   border-radius: 100px;
-  border: solid #e9afa3;
+  border: solid #dddddd;
 }
 
+.section--about {
+  overflow: hidden;
+}
 .section--about .about--container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .section--about .about--container .about--background {
-  background-color: #3a405a;
+  background-color: #0b132b;
   width: 33%;
   margin-left: 4vw;
-  border: solid #e9afa3;
-  box-shadow: 5px 5px 5px 5px #3a405a;
+  border: solid #dddddd;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px #0b132b;
 }
 .section--about .about--container .about--background p {
   font-family: "Rubik", sans-serif;
   padding: 4vw;
-  color: #aec5eb;
+  color: #dddddd;
 }
 .section--about .about--container img {
   border-radius: 100px;
-  border: solid #e9afa3;
+  border: solid #dddddd;
+}
+
+.section--projects {
+  overflow: hidden;
 }
 
 .section--contact {
@@ -88,6 +98,7 @@ body {
   align-items: center;
   justify-content: center;
   padding-bottom: 6vh;
+  overflow: hidden;
 }
 .section--contact .submitMessage {
   display: inline-block;
@@ -95,7 +106,7 @@ body {
   padding: 1rem;
   font-size: 1rem;
   font-family: "Rubik", sans-serif;
-  background-color: #3a405a;
+  background-color: #0b132b;
   width: 30%;
   text-align: center;
 }
@@ -105,10 +116,11 @@ body {
   align-items: center;
   font-size: 1.5rem;
   font-family: "Rubik", sans-serif;
-  background-color: #3a405a;
+  background-color: #0b132b;
   padding: 4vh;
-  border: solid #e9afa3;
-  box-shadow: 5px 5px 5px 5px #3a405a;
+  border: solid #dddddd;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px #0b132b;
   width: 50%;
   gap: 1vh;
 }
@@ -135,6 +147,7 @@ body {
 }
 .section--contact .form--container button {
   padding: 1rem;
+  margin-top: 1rem;
   border: 2px solid #444;
   border-radius: 5px;
 }
@@ -144,7 +157,8 @@ body {
 }
 
 .section--footer {
-  background-color: #3a405a;
+  overflow: hidden;
+  background-color: #0b132b;
   font-family: "Raleway", sans-serif;
   text-align: center;
   height: 20vh;
@@ -161,43 +175,176 @@ body {
 }
 .section--footer .footer--icons a {
   text-decoration: none;
-  color: #e9afa3;
+  color: #dddddd;
 }
 .section--footer .footer--icons a:hover {
-  color: #f9dec9;
+  color: #3a506b;
   transition: 0.5s;
 }
 
 .title {
   text-align: center;
   font-size: 4rem;
-  font-family: "Fanwood Text", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  color: #CE7B91;
+  color: #dddddd;
 }
 
-.card--container {
-  width: 25vw;
-  flex: 0 0 auto;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background-color: #3a405a;
-  border: solid #e9afa3;
-  padding: 1vw;
-  box-shadow: 5px 5px 5px 5px #3a405a;
+@media (min-width: 320px) {
+  .card--container {
+    width: 25vw;
+    height: 30vh;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #0b132b;
+    border: solid #dddddd;
+    border-radius: 10px;
+    padding: 1vw;
+    box-shadow: 5px 5px 5px 5px #0b132b;
+    align-items: center;
+    min-height: 380px;
+    max-height: 600px;
+  }
+  .card--container .card--image {
+    height: 20vw;
+    width: 20vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px;
+  }
+  .card--container .card--title {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #ffbc42;
+  }
+  .card--container .card--description {
+    padding-top: 1vh;
+    font-family: "Rubik", sans-serif;
+    color: #dddddd;
+  }
+  .card--container .card--link {
+    margin-top: auto;
+  }
+  .card--container .card--link .card--button {
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    width: 6vw;
+    background-color: #ffbc42;
+  }
+  .card--container .card--link .card--button:hover {
+    background-color: #dddddd;
+    transition: 0.3s;
+    cursor: pointer;
+  }
 }
-.card--container .card--title {
-  font-family: "Raleway", sans-serif;
-  font-size: 2rem;
-  text-align: center;
+@media (min-width: 641px) {
+  .card--container {
+    width: 25vw;
+    height: 44vh;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #0b132b;
+    border: solid #dddddd;
+    border-radius: 10px;
+    padding: 1vw;
+    box-shadow: 5px 5px 5px 5px #0b132b;
+    align-items: center;
+    min-height: 500px;
+    max-height: 570px;
+  }
+  .card--container .card--image {
+    height: 20vw;
+    width: 20vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px;
+  }
+  .card--container .card--title {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #ffbc42;
+  }
+  .card--container .card--description {
+    padding-top: 1vh;
+    font-family: "Rubik", sans-serif;
+    color: #dddddd;
+  }
+  .card--container .card--link {
+    margin-top: auto;
+  }
+  .card--container .card--link .card--button {
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    width: 6vw;
+    background-color: #ffbc42;
+  }
+  .card--container .card--link .card--button:hover {
+    background-color: #dddddd;
+    transition: 0.3s;
+    cursor: pointer;
+  }
 }
-.card--container .card--description {
-  padding-top: 1vh;
-  font-family: "Rubik", sans-serif;
-  color: #aec5eb;
+@media (min-width: 1281px) {
+  .card--container {
+    width: 25vw;
+    height: 55vh;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #0b132b;
+    border: solid #dddddd;
+    border-radius: 10px;
+    padding: 1vw;
+    box-shadow: 5px 5px 5px 5px #0b132b;
+    align-items: center;
+  }
+  .card--container .card--image {
+    height: 20vw;
+    width: 20vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px;
+  }
+  .card--container .card--title {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #ffbc42;
+  }
+  .card--container .card--description {
+    padding-top: 1vh;
+    font-family: "Rubik", sans-serif;
+    color: #dddddd;
+  }
+  .card--container .card--link {
+    margin-top: auto;
+  }
+  .card--container .card--link .card--button {
+    padding: 0.5rem;
+    min-width: 5.5vw;
+    border-radius: 5px;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    width: 6vw;
+    background-color: #ffbc42;
+  }
+  .card--container .card--link .card--button:hover {
+    background-color: #dddddd;
+    transition: 0.3s;
+    cursor: pointer;
+  }
 }
-
 .cards {
   display: flex;
   flex-wrap: wrap;

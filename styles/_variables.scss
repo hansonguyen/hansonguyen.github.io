@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@1&family=Raleway:wght@600;900&family=Rubik&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@1&family=Montserrat:wght@700&family=Raleway:wght@600;900&family=Rubik&display=swap');
 // Colors
-$primary-color: #aec5eb; // Main BG Color/Paragraph Text Color
-$secondary-color: #3a405a; // Navbar/Card BG
-$text-color: #f9dec9; // Header text
-$secondary-text-color: #e9afa3;
-$dark-text-color: #CE7B91;
+$primary-color: #3a506b; // Main BG Color/Paragraph Text Color
+$secondary-color: #0b132b; // Navbar/Card BG
+$text-color: #dddddd; // Header text
+$header-text-color: #eeeeee;
+$subtitle-text-color: #ffbc42;
 
 $shadow: 5px 5px 5px 5px $secondary-color;
-$border: solid $secondary-text-color;
+$border: solid $text-color;
 
 // Fonts
 $header-font: 'Raleway', sans-serif;
 $subtitle-font: 'Fanwood Text', sans-serif;
+$title-font: 'Montserrat', sans-serif;
 $text-font: 'Rubik', sans-serif;
 
 // font-family: 'Fanwood Text', serif;
