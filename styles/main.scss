@@ -46,7 +46,7 @@ body {
         font-family: $subtitle-font;
         letter-spacing: 3px;
         color: $subtitle-text-color;
-        padding-top: 6rem;
+        padding-top: 3rem;
         font-size: 4rem;
     }
     .home--title {
@@ -58,7 +58,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-top: 5rem;
+        padding-top: 3rem;
         font-family: $text-font;
         img {
             border-radius: 100px;
@@ -175,7 +175,7 @@ body {
     background-color: $secondary-color;
     font-family: $header-font;
     text-align: center;
-    height: 20rem;
+    height: 15rem;
     padding-top: 0.5rem;
     .footer--email {
         padding-bottom: 1rem;
@@ -210,7 +210,7 @@ body {
 
 .card--container {
     width: 30rem;
-    height: 40rem;
+    height: 34rem;
     flex: 0 0 auto;        
     display: flex;         
     flex-direction: column;
@@ -218,13 +218,13 @@ body {
     background-color: $secondary-color;
     border: solid $text-color;
     border-radius: 10px;
-    padding: 1vw;
+    padding: 1rem;
     box-shadow: $shadow;
     align-items: center;
     min-height: 500px;
     .card--image {
-        height: 20vw;
-        width: 20vw;
+        height: 20rem;
+        width: 20rem;
         object-fit: cover;
         border-radius: 5px;
     }
@@ -236,7 +236,7 @@ body {
         color: $subtitle-text-color;
     }
     .card--description {
-        padding-top: 1vh;
+        padding-top: 1rem;
         font-family: $text-font;
         color: $text-color;
     }
@@ -247,7 +247,7 @@ body {
             border-radius: 5px;
             font-family: $header-font;
             font-size: 1rem;
-            width: 6vw;
+            width: 6rem;
             background-color: $subtitle-text-color;
             &:hover {
                 background-color: $text-color;
