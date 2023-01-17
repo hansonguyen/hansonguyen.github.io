@@ -63,6 +63,7 @@ body {
         img {
             border-radius: 100px;
             border: $border;
+            height: 23rem;
         }
     }
 }
@@ -260,8 +261,8 @@ body {
 
 @media (min-width:641px) {
     .card--container {
-        width: 30vw;
-        height: 50vh;
+        width: 30rem;
+        height: 50rem;
         flex: 0 0 auto;        
         display: flex;         
         flex-direction: column;
@@ -312,8 +313,8 @@ body {
 
 @media (min-width:1281px) {
     .card--container {
-        width: 30vw;
-        height: 60vh;
+        width: 30rem;
+        height: 60rem;
         flex: 0 0 auto;        
         display: flex;         
         flex-direction: column;
