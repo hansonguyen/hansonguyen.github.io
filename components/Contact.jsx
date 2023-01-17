@@ -86,7 +86,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                 />
-                <label for="message">Message!</label>
+                <label for="message">Message</label>
                 <textarea 
                     id="message"
                     name="message"

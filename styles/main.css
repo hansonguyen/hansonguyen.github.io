@@ -244,8 +244,8 @@ body {
 }
 @media (min-width: 641px) {
   .card--container {
-    width: 25vw;
-    height: 44vh;
+    width: 30vw;
+    height: 50vh;
     flex: 0 0 auto;
     display: flex;
     flex-direction: column;
@@ -296,8 +296,8 @@ body {
 }
 @media (min-width: 1281px) {
   .card--container {
-    width: 25vw;
-    height: 55vh;
+    width: 30vw;
+    height: 60vh;
     flex: 0 0 auto;
     display: flex;
     flex-direction: column;
@@ -305,7 +305,7 @@ body {
     background-color: #0b132b;
     border: solid #dddddd;
     border-radius: 10px;
-    padding: 1vw;
+    padding: 1rem;
     box-shadow: 5px 5px 5px 5px #0b132b;
     align-items: center;
   }
