@@ -42,19 +42,19 @@ body {
   font-family: "Fanwood Text", sans-serif;
   letter-spacing: 3px;
   color: #ffbc42;
-  padding-top: 6vh;
+  padding-top: 6rem;
   font-size: 4rem;
 }
 .section--home .home--title {
   font-family: "Raleway", sans-serif;
-  font-size: 8rem;
+  font-size: 6rem;
   margin: 0;
 }
 .section--home .home--container {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 5vh;
+  padding-top: 5rem;
   font-family: "Rubik", sans-serif;
 }
 .section--home .home--container img {
@@ -74,14 +74,14 @@ body {
 .section--about .about--container .about--background {
   background-color: #0b132b;
   width: 33%;
-  margin-left: 4vw;
+  margin-left: 4rem;
   border: solid #dddddd;
   border-radius: 10px;
   box-shadow: 5px 5px 5px 5px #0b132b;
 }
 .section--about .about--container .about--background p {
   font-family: "Rubik", sans-serif;
-  padding: 4vw;
+  padding: 2rem;
   color: #dddddd;
 }
 .section--about .about--container img {
@@ -162,17 +162,17 @@ body {
   background-color: #0b132b;
   font-family: "Raleway", sans-serif;
   text-align: center;
-  height: 20vh;
-  padding-top: 0.5vh;
+  height: 20rem;
+  padding-top: 0.5rem;
 }
 .section--footer .footer--email {
-  padding-bottom: 1vh;
+  padding-bottom: 1rem;
 }
 .section--footer .footer--icons {
-  padding-bottom: 2vh;
+  padding-bottom: 2rem;
   display: flex;
   justify-content: center;
-  gap: 10vw;
+  gap: 10rem;
 }
 .section--footer .footer--icons a {
   text-decoration: none;
@@ -191,161 +191,57 @@ body {
   color: #dddddd;
 }
 
-@media (min-width: 320px) {
-  .card--container {
-    width: 25vw;
-    height: 30vh;
-    flex: 0 0 auto;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background-color: #0b132b;
-    border: solid #dddddd;
-    border-radius: 10px;
-    padding: 1vw;
-    box-shadow: 5px 5px 5px 5px #0b132b;
-    align-items: center;
-    min-height: 380px;
-    max-height: 600px;
-  }
-  .card--container .card--image {
-    height: 20vw;
-    width: 20vw;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 5px;
-  }
-  .card--container .card--title {
-    font-family: "Raleway", sans-serif;
-    font-size: 2rem;
-    text-align: center;
-    color: #ffbc42;
-  }
-  .card--container .card--description {
-    padding-top: 1vh;
-    font-family: "Rubik", sans-serif;
-    color: #dddddd;
-  }
-  .card--container .card--link {
-    margin-top: auto;
-  }
-  .card--container .card--link .card--button {
-    padding: 0.5rem;
-    border-radius: 5px;
-    font-family: "Raleway", sans-serif;
-    font-size: 1rem;
-    width: 6vw;
-    background-color: #ffbc42;
-  }
-  .card--container .card--link .card--button:hover {
-    background-color: #dddddd;
-    transition: 0.3s;
-    cursor: pointer;
-  }
+.card--container {
+  width: 30rem;
+  height: 40rem;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #0b132b;
+  border: solid #dddddd;
+  border-radius: 10px;
+  padding: 1vw;
+  box-shadow: 5px 5px 5px 5px #0b132b;
+  align-items: center;
+  min-height: 500px;
 }
-@media (min-width: 641px) {
-  .card--container {
-    width: 30rem;
-    height: 50rem;
-    flex: 0 0 auto;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background-color: #0b132b;
-    border: solid #dddddd;
-    border-radius: 10px;
-    padding: 1vw;
-    box-shadow: 5px 5px 5px 5px #0b132b;
-    align-items: center;
-    min-height: 500px;
-    max-height: 570px;
-  }
-  .card--container .card--image {
-    height: 20vw;
-    width: 20vw;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 5px;
-  }
-  .card--container .card--title {
-    font-family: "Raleway", sans-serif;
-    font-size: 2rem;
-    text-align: center;
-    color: #ffbc42;
-  }
-  .card--container .card--description {
-    padding-top: 1vh;
-    font-family: "Rubik", sans-serif;
-    color: #dddddd;
-  }
-  .card--container .card--link {
-    margin-top: auto;
-  }
-  .card--container .card--link .card--button {
-    padding: 0.5rem;
-    border-radius: 5px;
-    font-family: "Raleway", sans-serif;
-    font-size: 1rem;
-    width: 6vw;
-    background-color: #ffbc42;
-  }
-  .card--container .card--link .card--button:hover {
-    background-color: #dddddd;
-    transition: 0.3s;
-    cursor: pointer;
-  }
+.card--container .card--image {
+  height: 20vw;
+  width: 20vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
 }
-@media (min-width: 1281px) {
-  .card--container {
-    width: 30rem;
-    height: 60rem;
-    flex: 0 0 auto;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background-color: #0b132b;
-    border: solid #dddddd;
-    border-radius: 10px;
-    padding: 1rem;
-    box-shadow: 5px 5px 5px 5px #0b132b;
-    align-items: center;
-  }
-  .card--container .card--image {
-    height: 20vw;
-    width: 20vw;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 5px;
-  }
-  .card--container .card--title {
-    font-family: "Raleway", sans-serif;
-    font-size: 2rem;
-    text-align: center;
-    color: #ffbc42;
-  }
-  .card--container .card--description {
-    padding-top: 1vh;
-    font-family: "Rubik", sans-serif;
-    color: #dddddd;
-  }
-  .card--container .card--link {
-    margin-top: auto;
-  }
-  .card--container .card--link .card--button {
-    padding: 0.5rem;
-    min-width: 5.5vw;
-    border-radius: 5px;
-    font-family: "Raleway", sans-serif;
-    font-size: 1rem;
-    width: 6vw;
-    background-color: #ffbc42;
-  }
-  .card--container .card--link .card--button:hover {
-    background-color: #dddddd;
-    transition: 0.3s;
-    cursor: pointer;
-  }
+.card--container .card--title {
+  padding-top: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #ffbc42;
 }
+.card--container .card--description {
+  padding-top: 1vh;
+  font-family: "Rubik", sans-serif;
+  color: #dddddd;
+}
+.card--container .card--link {
+  margin-top: auto;
+}
+.card--container .card--link .card--button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  width: 6vw;
+  background-color: #ffbc42;
+}
+.card--container .card--link .card--button:hover {
+  background-color: #dddddd;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;

@@ -46,19 +46,19 @@ body {
         font-family: $subtitle-font;
         letter-spacing: 3px;
         color: $subtitle-text-color;
-        padding-top: 6vh;
+        padding-top: 6rem;
         font-size: 4rem;
     }
     .home--title {
         font-family: $header-font;
-        font-size: 8rem;
+        font-size: 6rem;
         margin: 0;
     }
     .home--container {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-top: 5vh;
+        padding-top: 5rem;
         font-family: $text-font;
         img {
             border-radius: 100px;
@@ -79,13 +79,13 @@ body {
         .about--background {
             background-color: $secondary-color;
             width: 33%;
-            margin-left: 4vw;
+            margin-left: 4rem;
             border: $border;
             border-radius: 10px;
             box-shadow: $shadow;
             p {
                 font-family: $text-font;
-                padding: 4vw;
+                padding: 2rem;
                 color: $text-color;
             }
         }
@@ -175,13 +175,13 @@ body {
     background-color: $secondary-color;
     font-family: $header-font;
     text-align: center;
-    height: 20vh;
-    padding-top: 0.5vh;
+    height: 20rem;
+    padding-top: 0.5rem;
     .footer--email {
-        padding-bottom: 1vh;
+        padding-bottom: 1rem;
     }
     .footer--icons {
-        padding-bottom: 2vh;
+        padding-bottom: 2rem;
         a {
             text-decoration: none;
             color: $text-color;
@@ -192,7 +192,7 @@ body {
         }
         display: flex;
         justify-content: center;
-        gap: 10vw;
+        gap: 10rem;
     }
 }
 
@@ -207,156 +207,52 @@ body {
 }
 
 // Card
-@media (min-width:320px) {
-    .card--container {
-        width: 25vw;
-        height: 30vh;
-        flex: 0 0 auto;        
-        display: flex;         
-        flex-direction: column;
-        position: relative;
-        background-color: $secondary-color;
-        border: solid $text-color;
-        border-radius: 10px;
-        padding: 1vw;
-        box-shadow: $shadow;
-        align-items: center;
-        min-height: 380px;
-        max-height: 600px;
-        .card--image {
-            height: 20vw;
-            width: 20vw;
-            object-fit: cover;
-            border-radius: 5px;
-        }
-        .card--title {
-            font-family: $header-font;
-            font-size: 2rem;
-            text-align: center;
-            color: $subtitle-text-color;
-        }
-        .card--description {
-            padding-top: 1vh;
-            font-family: $text-font;
-            color: $text-color;
-        }
-        .card--link {
-            margin-top: auto;
-            .card--button {
-                padding: 0.5rem;
-                border-radius: 5px;
-                font-family: $header-font;
-                font-size: 1rem;
-                width: 6vw;
-                background-color: $subtitle-text-color;
-                &:hover {
-                    background-color: $text-color;
-                    transition: 0.3s;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
-} 
 
-@media (min-width:641px) {
-    .card--container {
-        width: 30rem;
-        height: 50rem;
-        flex: 0 0 auto;        
-        display: flex;         
-        flex-direction: column;
-        position: relative;
-        background-color: $secondary-color;
-        border: solid $text-color;
-        border-radius: 10px;
-        padding: 1vw;
-        box-shadow: $shadow;
-        align-items: center;
-        min-height: 500px;
-        max-height: 570px;
-        .card--image {
-            height: 20vw;
-            width: 20vw;
-            object-fit: cover;
-            border-radius: 5px;
-        }
-        .card--title {
-            font-family: $header-font;
-            font-size: 2rem;
-            text-align: center;
-            color: $subtitle-text-color;
-        }
-        .card--description {
-            padding-top: 1vh;
-            font-family: $text-font;
-            color: $text-color;
-        }
-        .card--link {
-            margin-top: auto;
-            .card--button {
-                padding: 0.5rem;
-                border-radius: 5px;
-                font-family: $header-font;
-                font-size: 1rem;
-                width: 6vw;
-                background-color: $subtitle-text-color;
-                &:hover {
-                    background-color: $text-color;
-                    transition: 0.3s;
-                    cursor: pointer;
-                }
-            }
-        }
+.card--container {
+    width: 30rem;
+    height: 40rem;
+    flex: 0 0 auto;        
+    display: flex;         
+    flex-direction: column;
+    position: relative;
+    background-color: $secondary-color;
+    border: solid $text-color;
+    border-radius: 10px;
+    padding: 1vw;
+    box-shadow: $shadow;
+    align-items: center;
+    min-height: 500px;
+    .card--image {
+        height: 20vw;
+        width: 20vw;
+        object-fit: cover;
+        border-radius: 5px;
     }
-} 
-
-@media (min-width:1281px) {
-    .card--container {
-        width: 30rem;
-        height: 60rem;
-        flex: 0 0 auto;        
-        display: flex;         
-        flex-direction: column;
-        position: relative;
-        background-color: $secondary-color;
-        border: solid $text-color;
-        border-radius: 10px;
-        padding: 1rem;
-        box-shadow: $shadow;
-        align-items: center;
-        .card--image {
-            height: 20vw;
-            width: 20vw;
-            object-fit: cover;
+    .card--title {
+        padding-top: 1rem;
+        font-family: $header-font;
+        font-size: 2rem;
+        text-align: center;
+        color: $subtitle-text-color;
+    }
+    .card--description {
+        padding-top: 1vh;
+        font-family: $text-font;
+        color: $text-color;
+    }
+    .card--link {
+        margin-top: auto;
+        .card--button {
+            padding: 0.5rem;
             border-radius: 5px;
-        }
-        .card--title {
             font-family: $header-font;
-            font-size: 2rem;
-            text-align: center;
-            color: $subtitle-text-color;
-        }
-        .card--description {
-            padding-top: 1vh;
-            font-family: $text-font;
-            color: $text-color;
-        }
-        .card--link {
-            margin-top: auto;
-            .card--button {
-                padding: 0.5rem;
-                min-width: 5.5vw;
-                border-radius: 5px;
-                font-family: $header-font;
-                font-size: 1rem;
-                width: 6vw;
-                background-color: $subtitle-text-color;
-                &:hover {
-                    background-color: $text-color;
-                    transition: 0.3s;
-                    cursor: pointer;
-                }
+            font-size: 1rem;
+            width: 6vw;
+            background-color: $subtitle-text-color;
+            &:hover {
+                background-color: $text-color;
+                transition: 0.3s;
+                cursor: pointer;
             }
         }
     }

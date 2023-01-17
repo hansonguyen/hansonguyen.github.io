@@ -20,7 +20,8 @@ export default function About() {
                     initial={{opacity: 0}}
                     whileInView={{opacity: 1}}
                 >
-                    <p>I am currently a second-year at UC Davis pursuing a Bachelor's Degree in Computer Engineering with a minor in Technology Management. I am interested in using code to develop new things and I am always eager to learn and step outside of my comfort zone. In my spare time, I enjoy spending time with those close to me, working out, and cooking new recipes.</p>
+                    <p>As a second-year computer engineering student at UC Davis with a minor in technology management, I am constantly seeking opportunities to apply the knowledge and skills I am acquiring in the classroom to real-world projects. I am a proactive problem-solver, always eager to learn and grow as a coder, engineer, and individual.</p>
+                    <p>In my spare time, I enjoy spending time with my loved ones, working out, and experimenting with new cooking recipes.</p>
                 </motion.div>
             </div>
         </section>
