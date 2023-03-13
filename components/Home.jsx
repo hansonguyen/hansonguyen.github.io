@@ -11,7 +11,7 @@ export default function Home() {
                 animate={{scale: [0, 5, 1], y: 0}}
                 transition={{ease: "easeOut", duration: 1, times: [0, 0.9, 1]}}
             >
-                Hello! I'm
+                👋 Hello! I'm
             </motion.h2>
             <motion.h1 className="home--title"
                 initial={{x: 1500}} 

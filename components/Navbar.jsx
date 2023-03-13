@@ -12,17 +12,24 @@ export default function Navbar() {
         >
           About
         </motion.a>
-        <motion.a className="nav--links" href="#projects"
+        <motion.a className="nav--links" href="#experience"
           initial={{opacity: 0}}
           animate={{opacity: 1}}
           transition={{duration: 1, delay: 1.75}}
+        >
+          Experience
+        </motion.a>
+        <motion.a className="nav--links" href="#projects"
+          initial={{opacity: 0}}
+          animate={{opacity: 1}}
+          transition={{duration: 1, delay: 2}}
         >
           Projects
         </motion.a>
         <motion.a className="nav--links" href="#contact"
           initial={{opacity: 0}}
           animate={{opacity: 1}}
-          transition={{duration: 1, delay: 2}}
+          transition={{duration: 1, delay: 2.25}}
         >
           Contact
         </motion.a>

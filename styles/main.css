@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@1&family=Montserrat:wght@700&family=Raleway:wght@600;900&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,7 @@
 }
 
 body {
-  background-color: #3a506b;
+  background-color: #1f487e;
   color: #dddddd;
 }
 
@@ -15,7 +16,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0b132b;
+  background-color: #0a1128;
   font-family: "Raleway", sans-serif;
   list-style-type: none;
   font-size: 2rem;
@@ -29,8 +30,9 @@ body {
   letter-spacing: 0.5px;
 }
 .nav--container .nav--links:hover {
-  color: #ffbc42;
-  transition: 1s;
+  color: #72ddf7;
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
 .section--home {
@@ -39,9 +41,9 @@ body {
   overflow: hidden;
 }
 .section--home .home--subtitle {
-  font-family: "Fanwood Text", sans-serif;
+  font-family: "Roboto Mono", monospace;
   letter-spacing: 3px;
-  color: #ffbc42;
+  color: #72ddf7;
   padding-top: 2.5rem;
   font-size: 4rem;
 }
@@ -72,21 +74,50 @@ body {
   align-items: center;
 }
 .section--about .about--container .about--background {
-  background-color: #0b132b;
+  background-color: #0a1128;
   width: 33%;
   margin-left: 4rem;
   border: solid #dddddd;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px 5px #0b132b;
+  box-shadow: 5px 5px 5px 5px #0a1128;
 }
 .section--about .about--container .about--background p {
   font-family: "Rubik", sans-serif;
   padding: 2rem;
+  font-size: 1.5rem;
   color: #dddddd;
 }
 .section--about .about--container img {
   border-radius: 100px;
   border: solid #dddddd;
+}
+
+.experience--container {
+  display: flex;
+  flex-grow: 1;
+  width: 45%;
+  margin: auto;
+}
+.experience--container .experience--tabs .experience--label {
+  font-family: "Rubik", sans-serif;
+  color: #dddddd;
+}
+.experience--container .experience--panel {
+  width: 100%;
+}
+.experience--container .experience--panel .experience--name {
+  font-family: "Raleway", sans-serif;
+  color: #72ddf7;
+  font-size: 2rem;
+}
+.experience--container .experience--panel .experience--subtitle {
+  font-family: "Roboto Mono", monospace;
+  opacity: 75%;
+  padding-bottom: 0.5rem;
+}
+.experience--container .experience--panel .experience--bullet {
+  font-family: "Rubik", sans-serif;
+  padding-top: 0.5rem;
 }
 
 .section--projects {
@@ -107,7 +138,7 @@ body {
   padding: 1rem;
   font-size: 1rem;
   font-family: "Rubik", sans-serif;
-  background-color: #0b132b;
+  background-color: #0a1128;
   width: 30%;
   text-align: center;
 }
@@ -117,15 +148,16 @@ body {
   align-items: center;
   font-size: 1.5rem;
   font-family: "Rubik", sans-serif;
-  background-color: #0b132b;
+  background-color: #0a1128;
   padding: 4vh;
   border: solid #dddddd;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px 5px #0b132b;
+  box-shadow: 5px 5px 5px 5px #0a1128;
   width: 50%;
   gap: 1vh;
 }
-.section--contact .form--container input[type=text], .section--contact .form--container input[type=email] {
+.section--contact .form--container input[type=text],
+.section--contact .form--container input[type=email] {
   margin-bottom: 2vh;
   height: 2rem;
   text-indent: 10px;
@@ -159,16 +191,22 @@ body {
 
 .section--footer {
   overflow: hidden;
-  background-color: #0b132b;
+  background-color: #0a1128;
   font-family: "Raleway", sans-serif;
   text-align: center;
   height: 15rem;
   padding-top: 0.5rem;
 }
 .section--footer .footer--email {
-  padding-bottom: 1rem;
+  color: #dddddd;
+  text-decoration: none;
+}
+.section--footer .footer--email:hover {
+  color: #72ddf7;
+  transition: 0.2s;
 }
 .section--footer .footer--icons {
+  padding-top: 1rem;
   padding-bottom: 2rem;
   display: flex;
   justify-content: center;
@@ -179,8 +217,9 @@ body {
   color: #dddddd;
 }
 .section--footer .footer--icons a:hover {
-  color: #3a506b;
-  transition: 0.5s;
+  color: #72ddf7;
+  transform: scale(1.5);
+  transition: 0.2s;
 }
 
 .title {
@@ -198,19 +237,19 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color: #0b132b;
+  background-color: #0a1128;
   border: solid #dddddd;
   border-radius: 10px;
   padding: 1rem;
-  box-shadow: 5px 5px 5px 5px #0b132b;
+  box-shadow: 5px 5px 5px 5px #0a1128;
   align-items: center;
   min-height: 520px;
 }
 .card--container .card--image {
   height: 20rem;
   width: 20rem;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 5px;
 }
 .card--container .card--title {
@@ -218,7 +257,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
   text-align: center;
-  color: #ffbc42;
+  color: #72ddf7;
 }
 .card--container .card--skills {
   display: flex;
@@ -227,6 +266,7 @@ body {
   padding: 0.5rem;
   font-family: "Rubik", sans-serif;
   font-style: italic;
+  opacity: 75%;
 }
 .card--container .card--description {
   padding-top: 1rem;
@@ -243,7 +283,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   width: 6rem;
-  background-color: #ffbc42;
+  background-color: #72ddf7;
 }
 .card--container .card--link .card--button:hover {
   background-color: #dddddd;
