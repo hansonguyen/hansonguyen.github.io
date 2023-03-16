@@ -92,6 +92,14 @@ body {
   border: solid #dddddd;
 }
 
+@media screen and (max-width: 1000px) {
+  .section--about .about--container .about--background p {
+    font-size: 1rem;
+  }
+  .section--about .about--container img {
+    width: 20rem;
+  }
+}
 .experience--container {
   display: flex;
   flex-grow: 1;
@@ -120,6 +128,11 @@ body {
   padding-top: 0.5rem;
 }
 
+@media screen and (max-width: 1000px) {
+  .experience--container {
+    width: 80%;
+  }
+}
 .section--projects {
   overflow: hidden;
 }
@@ -189,6 +202,11 @@ body {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1000px) {
+  .section--contact .form--container {
+    width: 80%;
+  }
+}
 .section--footer {
   overflow: hidden;
   background-color: #0a1128;

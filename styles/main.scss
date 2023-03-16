@@ -98,6 +98,21 @@ body {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .section--about {
+        .about--container {
+            .about--background {
+                p {
+                    font-size: 1rem;
+                }
+            }
+            img {
+                width: 20rem;
+            }
+        }
+    }
+}
+
 // Experience
 
 .experience--container {
@@ -127,6 +142,12 @@ body {
             font-family: $text-font;
             padding-top: 0.5rem;
         }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .experience--container {
+        width: 80%;
     }
 }
 
@@ -199,6 +220,14 @@ body {
                 background-color: #dddddd;
                 cursor: pointer;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .section--contact {
+        .form--container {
+            width: 80%;
         }
     }
 }
