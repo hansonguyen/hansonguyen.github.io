@@ -95,6 +95,47 @@ body {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .section--home {
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+        .home--subtitle {
+            font-family: $subtitle-font;
+            letter-spacing: 3px;
+            color: $subtitle-text-color;
+            padding-top: 2.5rem;
+            font-size: 4rem;
+        }
+        .home--title {
+            font-family: $header-font;
+            font-size: 8rem;
+            margin: 0;
+            @include gradient-text(
+                linear-gradient(
+                    90deg,
+                    rgba(0, 212, 255, 1) 36%,
+                    rgba(111, 111, 221, 1) 44%,
+                    rgba(121, 238, 255, 1) 58%,
+                    rgba(226, 237, 240, 1) 63%
+                )
+            );
+        }
+        .home--container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 2.5rem;
+            font-family: $text-font;
+            img {
+                border-radius: 100px;
+                border: $border;
+                height: 23rem;
+            }
+        }
+    }
+}
+
 // About
 
 .section--about {
@@ -140,6 +181,9 @@ body {
 }
 
 // Experience
+.section--experience {
+    overflow-x: hidden;
+}
 
 .experience--container {
     display: flex;
