@@ -21,7 +21,7 @@ export default function About() {
                     whileInView={{opacity: 1}}
                 >
                     <p>As a second-year <strong>Computer Engineering</strong> student at UC Davis with a minor in Technology Management, I am constantly seeking opportunities to apply the knowledge and skills I am acquiring in the classroom to real-world projects. I am a proactive problem-solver, always eager to learn and grow as a coder, engineer, and individual.</p>
-                    <p>I am currently working with <strong>AggieWorks</strong> to build a roommate matching app using <strong>React Native</strong>, <strong>TypeScript</strong>, and <strong>Supabase</strong>.</p>
+                    <p>I am currently working with <a href="https://aggieworks.org/" target="_blank"><strong>AggieWorks</strong></a> to build a roommate matching app using <a href="https://reactnative.dev/" target="_blank"><strong>React Native</strong></a>, <a href="https://www.typescriptlang.org/" target="_blank"><strong>TypeScript</strong></a>, and <a href="https://supabase.com/" target="_blank"><strong>Supabase</strong></a>.</p>
                 </motion.div>
             </div>
         </section>

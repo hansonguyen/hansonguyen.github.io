@@ -21,6 +21,18 @@ body {
     color: transparent;
 }
 
+@mixin text-links() {
+    text-decoration: none;
+    color: $text-color;
+    &:visited {
+        color: $text-color;
+    }
+    &:hover {
+        opacity: 75%;
+        transition: 0.3s;
+    }
+}
+
 // Navbar
 
 .nav--container {
@@ -156,6 +168,9 @@ body {
                 padding: 2rem;
                 font-size: 1.5rem;
                 color: $text-color;
+                a {
+                    @include text-links();
+                }
             }
         }
         img {

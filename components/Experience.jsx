@@ -91,6 +91,9 @@ function VerticalTabs() {
                     <li className="experience--bullet">
                         Working in Dr. Pan's research lab to help develop SmartProbe that uses image processing to detect inserts
                     </li>
+                    <li className="experience--bullet">
+                        Utilizing ESP32 Microcontroller and C++
+                    </li>
                 </ul>
             </TabPanel>
             <TabPanel className="experience--panel" value={value} index={1}>
