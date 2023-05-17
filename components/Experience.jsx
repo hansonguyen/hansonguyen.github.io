@@ -65,6 +65,11 @@ function VerticalTabs() {
             >
                 <Tab
                     className="experience--label"
+                    label="Symmetry Laser"
+                    {...a11yProps(0)}
+                />
+                <Tab
+                    className="experience--label"
                     label="AIVision Food"
                     {...a11yProps(0)}
                 />
@@ -85,6 +90,18 @@ function VerticalTabs() {
                 />
             </Tabs>
             <TabPanel className="experience--panel" value={value} index={0}>
+                <h3 className="experience--name">Software Engineering Intern</h3>
+                <p className="experience--subtitle">May 2023 - Present</p>
+                <ul>
+                    <li className="experience--bullet">
+                        Incoming Software Engineering Intern
+                    </li>
+                    <li className="experience--bullet">
+                        Using <strong>Python</strong> for automation and optimizing tasks
+                    </li>
+                </ul>
+            </TabPanel>
+            <TabPanel className="experience--panel" value={value} index={1}>
                 <h3 className="experience--name">Hardware/Software Developer</h3>
                 <p className="experience--subtitle">March 2023 - Present</p>
                 <ul>
@@ -92,11 +109,14 @@ function VerticalTabs() {
                         Working in Dr. Pan's research lab to help develop SmartProbe that uses image processing to detect inserts
                     </li>
                     <li className="experience--bullet">
-                        Utilizing ESP32 Microcontroller and C++
+                        Utilizing <strong>ESP32 Microcontroller</strong> and <strong>C++</strong>
+                    </li>
+                    <li className="experience--bullet">
+                        Designing and implementing a remote access point for probes using <strong>Raspberry Pi</strong> and <strong>Python</strong>
                     </li>
                 </ul>
             </TabPanel>
-            <TabPanel className="experience--panel" value={value} index={1}>
+            <TabPanel className="experience--panel" value={value} index={2}>
                 <h3 className="experience--name">Software Engineer</h3>
                 <p className="experience--subtitle">January 2023 - Present</p>
                 <ul>
@@ -118,7 +138,7 @@ function VerticalTabs() {
                     </li>
                 </ul>
             </TabPanel>
-            <TabPanel className="experience--panel" value={value} index={2}>
+            <TabPanel className="experience--panel" value={value} index={3}>
                 <h3 className="experience--name">Website Editor Intern</h3>
                 <p className="experience--subtitle">October 2022 - Present</p>
                 <ul>
@@ -139,7 +159,7 @@ function VerticalTabs() {
                     </li>
                 </ul>
             </TabPanel>
-            <TabPanel className="experience--panel" value={value} index={3}>
+            <TabPanel className="experience--panel" value={value} index={4}>
                 <h3 className="experience--name">Treasurer</h3>
                 <p className="experience--subtitle">December 2021 - Present</p>
                 <ul>
