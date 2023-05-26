@@ -20,7 +20,7 @@ export default function About() {
                     initial={{opacity: 0}}
                     whileInView={{opacity: 1}}
                 >
-                    <p>As a second-year <strong>Computer Engineering</strong> student at UC Davis with a minor in Technology Management, I am constantly seeking opportunities to apply the knowledge and skills I am acquiring in the classroom to real-world projects. I am a proactive problem-solver, always eager to learn and grow as a coder, engineer, and individual.</p>
+                    <p>As a driven and ambitious second-year <strong>Computer Engineering</strong> student at UC Davis, complemented by a minor in Technology Management, I am consistently driven to bridge the gap between theoretical knowledge and practical applications. I enthusiastically seek out opportunities to apply the expertise and skills I am acquiring in the classroom to real-world projects. Embracing a proactive approach to problem-solving, I am fueled by a deep curiosity, perpetually motivated to expand my coding prowess, engineering acumen, and personal development.</p>
                     <p>This upcoming summer, I will be an incoming intern at <a href="https://www.symmetrylaser.com/" target="_blank"><strong>Symmetry Laser</strong></a> where I'll be using <a href="https://www.python.org/" target="_blank"><strong>Python</strong></a> for automation.</p>
                 </motion.div>
             </div>
