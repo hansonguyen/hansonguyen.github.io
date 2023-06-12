@@ -93,11 +93,8 @@ function VerticalTabs() {
                 <h3 className="experience--name">
                     Software Engineering Intern
                 </h3>
-                <p className="experience--subtitle">Planned June 2023</p>
+                <p className="experience--subtitle">June 2023 - Present</p>
                 <ul>
-                    <li className="experience--bullet">
-                        Incoming Software Engineering Intern
-                    </li>
                     <li className="experience--bullet">
                         Working within a team of <strong>15</strong> individuals
                         to optimize current systems using{' '}
@@ -134,8 +131,7 @@ function VerticalTabs() {
                     <li className="experience--bullet">
                         Collaborated with a team of 20 developers, designers,
                         and project managers in an <strong>AGILE</strong> work
-                        environment to build a roommate matching app and a
-                        marketplace website using <strong>React</strong>,{' '}
+                        environment to build applications for nearly <strong>40,000</strong> students using <strong>React</strong>,{' '}
                         <strong>TypeScript</strong>, <strong>Supabase</strong>,
                         and <strong>Prisma</strong>
                     </li>
@@ -145,8 +141,7 @@ function VerticalTabs() {
                         resulting in faster load times
                     </li>
                     <li className="experience--bullet">
-                        Leveraged React hooks to manage state and lifecycle
-                        methods, resulting in a smooth, seamless user experience
+                        Implemented responsive user interfaces using <strong>Next.js</strong>, leveraging the power of React and server-side rendering, resulting in higher user engagement
                     </li>
                     <li className="experience--bullet">
                         Refined filtering system to allow students to match
@@ -164,19 +159,10 @@ function VerticalTabs() {
                 <p className="experience--subtitle">October 2022 - Present</p>
                 <ul>
                     <li className="experience--bullet">
-                        Contributed to the design and maintenance of a
-                        non-profit website aimed at providing technology access
-                        to underprivileged communities
+                        Cooperated in a team of 6 people on the design and maintenance of a non-profit website aimed at providing technology access to underprivileged communities
                     </li>
                     <li className="experience--bullet">
-                        Developed and implemented web pages using{' '}
-                        <strong>HTML</strong> and <strong>CSS</strong> to
-                        promote e-waste recycling and affordable internet access
-                        opportunities
-                    </li>
-                    <li className="experience--bullet">
-                        Worked in a collaborative team environment to achieve
-                        the organization’s goals
+                        Increased site visitors by <strong>40%</strong> by developing web pages using <strong>HTML</strong> and <strong>CSS</strong> to promote e-waste recycling and affordable internet access opportunities
                     </li>
                 </ul>
             </TabPanel>

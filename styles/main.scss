@@ -69,9 +69,9 @@ body {
 // Home
 
 .section--home {
-    height: 100%;
     text-align: center;
     overflow: hidden;
+    padding-bottom: 10rem;
     .home--subtitle {
         font-family: $subtitle-font;
         letter-spacing: 3px;
@@ -109,7 +109,6 @@ body {
 
 @media screen and (max-width: 1000px) {
     .section--home {
-        height: auto;
         text-align: center;
         overflow: hidden;
         .home--subtitle {
@@ -340,7 +339,7 @@ body {
         text-decoration: none;
         &:hover {
             color: $subtitle-text-color;
-            transition: 0.2s;
+            transition: 0.4s;
         }
     }
     .footer--icons {

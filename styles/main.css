@@ -40,9 +40,9 @@ body {
 }
 
 .section--home {
-  height: 100%;
   text-align: center;
   overflow: hidden;
+  padding-bottom: 10rem;
 }
 .section--home .home--subtitle {
   font-family: "Roboto Mono", monospace;
@@ -76,7 +76,6 @@ body {
 
 @media screen and (max-width: 1000px) {
   .section--home {
-    height: auto;
     text-align: center;
     overflow: hidden;
   }
@@ -286,7 +285,7 @@ body {
 }
 .section--footer .footer--email:hover {
   color: #72ddf7;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 .section--footer .footer--icons {
   padding-top: 1rem;

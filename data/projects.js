@@ -1,6 +1,7 @@
 import workoutImg from '../assets/workoutImg.png'
-import botImg from '../assets/botImg.png'
+import notesImg from '../assets/notesImg.png'
 import petImg from '../assets/petImg.png'
+import botImg from '../assets/botImg.png'
 import climateImg from '../assets/climateImg.png'
 
 export default [
@@ -15,12 +16,17 @@ export default [
     },
     {
         id: 2,
-        title: 'Pokébot',
+        title: 'SmartNotes',
         description:
-            'I designed and developed a Discord bot that retrieves data from the RESTful PokéAPI. By leveraging the power of Python and adhering to Object-Oriented Programming principles, I crafted intuitive commands to present the API data in a user-friendly manner. Taking it a step further, I achieved a successful deployment of the bot to AWS EC2, ensuring its accessibility and uninterrupted performance.',
-        skills: ['Python', 'REST APIs'],
-        imgURL: botImg,
-        link: 'https://github.com/hansonguyen/discord-bot'
+            'I developed a Python application that enhances handwritten notes using OCR and AI. By improving image quality and utilizing the Google Cloud Vision API, we achieved accurate text extraction. Leveraging the OpenAI API, the application generated concise summaries and additional information to supplement the notes.',
+        skills: [
+            'Python',
+            'OpenCV',
+            'Google Cloud Vision',
+            'OpenAI'
+        ],
+        imgURL: notesImg,
+        link: 'https://github.com/hansonguyen/SmartNotes'
     },
     {
         id: 3,
@@ -40,6 +46,15 @@ export default [
     },
     {
         id: 4,
+        title: 'Pokébot',
+        description:
+            'I designed and developed a Discord bot that retrieves data from the RESTful PokéAPI. By leveraging the power of Python and adhering to Object-Oriented Programming principles, I crafted intuitive commands to present the API data in a user-friendly manner. Taking it a step further, I achieved a successful deployment of the bot to AWS EC2, ensuring its accessibility and uninterrupted performance.',
+        skills: ['Python', 'REST APIs'],
+        imgURL: botImg,
+        link: 'https://github.com/hansonguyen/discord-bot'
+    },
+    {
+        id: 5,
         title: 'Climate Change Project',
         description:
             'In a collaborative effort with a team of four, we developed a prototype for a carbon absorption system using zeolite for incinerators. I utilized an Arduino and C++ to build a circuit incorporating a temperature sensor, motors, and LEDs, enabling precise fan control.',
