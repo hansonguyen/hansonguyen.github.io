@@ -96,9 +96,13 @@ function VerticalTabs() {
                 <p className="experience--subtitle">June 2023 - Present</p>
                 <ul>
                     <li className="experience--bullet">
-                        Working within a team of <strong>15</strong> individuals
-                        to optimize current systems using{' '}
-                        <strong>Python</strong>, enhancing overall efficiency
+                        Employed <strong>Flask</strong> and efficient <strong>SQL</strong> queries to optimize graphical data visualizations featuring real-time updates and better stability
+                    </li>
+                    <li className="experience--bullet">
+                        Reduced upload time for logging application events by <strong>50%</strong> from 8 to 4 seconds and revamped functionality using <strong>Python</strong> and <strong>InfluxDB</strong>
+                    </li>
+                    <li className="experience--bullet">
+                        Streamlined PDF filing process by developing a <strong>PySide</strong> application, saving countless hours of manual work
                     </li>
                 </ul>
             </TabPanel>
@@ -106,7 +110,7 @@ function VerticalTabs() {
                 <h3 className="experience--name">
                     Hardware/Software Developer
                 </h3>
-                <p className="experience--subtitle">March 2023 - Present</p>
+                <p className="experience--subtitle">March 2023 - June 2023</p>
                 <ul>
                     <li className="experience--bullet">
                         Working in Dr. Pan's research lab to help develop
@@ -162,13 +166,13 @@ function VerticalTabs() {
                         Cooperated in a team of 6 people on the design and maintenance of a non-profit website aimed at providing technology access to underprivileged communities
                     </li>
                     <li className="experience--bullet">
-                        Increased site visitors by <strong>40%</strong> by developing web pages using <strong>HTML</strong> and <strong>CSS</strong> to promote e-waste recycling and affordable internet access opportunities
+                        Increased unique site visitors by <strong>50%</strong> and accumulated over <strong>25,000</strong> page views by developing web pages using HTML and CSS that promoted e-waste recycling and affordable internet access opportunities
                     </li>
                 </ul>
             </TabPanel>
             <TabPanel className="experience--panel" value={value} index={4}>
                 <h3 className="experience--name">Treasurer</h3>
-                <p className="experience--subtitle">December 2021 - Present</p>
+                <p className="experience--subtitle">December 2021 - June 2023</p>
                 <ul>
                     <li className="experience--bullet">
                         Led finance team to acquire sponsorships and funding for

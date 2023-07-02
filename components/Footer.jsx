@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaLinkedin, FaGithub, FaInstagram, FaFile } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaFile } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import resume from "../assets/Hanson_Nguyen_Resume.pdf"
 
@@ -28,12 +28,6 @@ export default function Footer() {
                 </a>
                 <a target="_blank" href="https://github.com/hansonguyen">
                     <FaGithub size="2rem" />
-                </a>
-                <a
-                    target="_blank"
-                    href="https://www.instagram.com/hansonguyen/"
-                >
-                    <FaInstagram size="2rem" />
                 </a>
                 <a
                     target="_blank"
