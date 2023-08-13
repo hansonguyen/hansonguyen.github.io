@@ -96,35 +96,53 @@ function VerticalTabs() {
                 <p className="experience--subtitle">June 2023 - Present</p>
                 <ul>
                     <li className="experience--bullet">
-                        Employed <strong>Flask</strong> and efficient <strong>SQL</strong> queries to optimize graphical data visualizations featuring real-time updates and better stability
+                        Employed <strong>Flask</strong> and efficient{' '}
+                        <strong>SQL</strong> queries to optimize graphical data
+                        visualizations featuring real-time updates and better
+                        stability
                     </li>
                     <li className="experience--bullet">
-                        Reduced upload time for logging application events by <strong>50%</strong> from 8 to 4 seconds and revamped functionality using <strong>Python</strong> and <strong>InfluxDB</strong>
+                        Minimized the number of late jobs by <strong>30%</strong> with an
+                        efficient job scheduling algorithm and built a
+                        full-stack application using <strong>React</strong>
                     </li>
                     <li className="experience--bullet">
-                        Streamlined PDF filing process by developing a <strong>PySide</strong> application, saving countless hours of manual work
+                        Reduced upload time for logging application events by{' '}
+                        <strong>50%</strong> from 8 to 4 seconds and revamped
+                        functionality using <strong>Python</strong> and{' '}
+                        <strong>InfluxDB</strong>
+                    </li>
+                    <li className="experience--bullet">
+                        Streamlined PDF filing process by developing a{' '}
+                        <strong>PySide</strong> application, saving countless
+                        hours of manual work
+                    </li>
+                    <li className="experience--bullet">
+                        Used <strong>Grafana</strong> and{' '}
+                        <strong>InfluxDB</strong> for clear and informative
+                        time-series data visualizations
                     </li>
                 </ul>
             </TabPanel>
             <TabPanel className="experience--panel" value={value} index={1}>
-                <h3 className="experience--name">
-                    Hardware/Software Developer
-                </h3>
+                <h3 className="experience--name">Hardware/Software Engineer</h3>
                 <p className="experience--subtitle">March 2023 - June 2023</p>
                 <ul>
                     <li className="experience--bullet">
-                        Working in Dr. Pan's research lab to help develop
-                        SmartProbe that uses image processing to detect inserts
+                        Conducted comprehensive testing and validation
+                        procedures on SmartProbe to ensure optimal reliability
+                        and accuracy, identifying and resolving potential issues
+                        proactively
                     </li>
                     <li className="experience--bullet">
-                        Utilizing <strong>ESP32 Microcontroller</strong> and{' '}
-                        <strong>C++</strong>
+                        Implemented improvements to enhance the battery
+                        longevity of the device by redesigning battery
+                        percentage thresholds through rigorous testing,
+                        resulting in improved user experience
                     </li>
                     <li className="experience--bullet">
-                        Designing and implementing a remote access point for
-                        probes using <strong>Raspberry Pi</strong>,{' '}
-                        <strong>Python</strong>, and <strong>MQTT</strong>{' '}
-                        protocol
+                        Collaborated in team of 5 to design a remote access
+                        point using <strong>Raspberry Pi</strong>
                     </li>
                 </ul>
             </TabPanel>
@@ -135,9 +153,10 @@ function VerticalTabs() {
                     <li className="experience--bullet">
                         Collaborated with a team of 20 developers, designers,
                         and project managers in an <strong>AGILE</strong> work
-                        environment to build applications for nearly <strong>40,000</strong> students using <strong>React</strong>,{' '}
-                        <strong>TypeScript</strong>, <strong>Supabase</strong>,
-                        and <strong>Prisma</strong>
+                        environment to build applications for nearly{' '}
+                        <strong>40,000</strong> students using{' '}
+                        <strong>React</strong>, <strong>TypeScript</strong>,{' '}
+                        <strong>Supabase</strong>, and <strong>Prisma</strong>
                     </li>
                     <li className="experience--bullet">
                         Reduced API latency caused by storing data and images by{' '}
@@ -145,7 +164,10 @@ function VerticalTabs() {
                         resulting in faster load times
                     </li>
                     <li className="experience--bullet">
-                        Implemented responsive user interfaces using <strong>Next.js</strong>, leveraging the power of React and server-side rendering, resulting in higher user engagement
+                        Implemented responsive user interfaces using{' '}
+                        <strong>Next.js</strong>, leveraging the power of React
+                        and server-side rendering, resulting in higher user
+                        engagement
                     </li>
                     <li className="experience--bullet">
                         Refined filtering system to allow students to match
@@ -159,20 +181,28 @@ function VerticalTabs() {
                 </ul>
             </TabPanel>
             <TabPanel className="experience--panel" value={value} index={3}>
-                <h3 className="experience--name">Website Editor Intern</h3>
+                <h3 className="experience--name">Website Technician</h3>
                 <p className="experience--subtitle">October 2022 - Present</p>
                 <ul>
                     <li className="experience--bullet">
-                        Cooperated in a team of 6 people on the design and maintenance of a non-profit website aimed at providing technology access to underprivileged communities
+                        Cooperated in a team of 6 people on the design and
+                        maintenance of a non-profit website aimed at providing
+                        technology access to underprivileged communities
                     </li>
                     <li className="experience--bullet">
-                        Increased unique site visitors by <strong>50%</strong> and accumulated over <strong>25,000</strong> page views by developing web pages using HTML and CSS that promoted e-waste recycling and affordable internet access opportunities
+                        Increased unique site visitors by <strong>50%</strong>{' '}
+                        and accumulated over <strong>25,000</strong> page views
+                        by developing web pages using HTML and CSS that promoted
+                        e-waste recycling and affordable internet access
+                        opportunities
                     </li>
                 </ul>
             </TabPanel>
             <TabPanel className="experience--panel" value={value} index={4}>
                 <h3 className="experience--name">Treasurer</h3>
-                <p className="experience--subtitle">December 2021 - June 2023</p>
+                <p className="experience--subtitle">
+                    December 2021 - June 2023
+                </p>
                 <ul>
                     <li className="experience--bullet">
                         Led finance team to acquire sponsorships and funding for

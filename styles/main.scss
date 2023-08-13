@@ -161,7 +161,6 @@ body {
             margin-left: 4rem;
             border: $border;
             border-radius: 10px;
-            box-shadow: $shadow;
             p {
                 font-family: $text-font;
                 padding: 2rem;
@@ -374,7 +373,7 @@ body {
 
 .card--container {
     width: 30rem;
-    height: 34rem;
+    height: 35rem;
     flex: 0 0 auto;
     display: flex;
     flex-direction: column;
