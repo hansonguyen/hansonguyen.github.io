@@ -19,11 +19,4 @@ jobs:
       - name: Install
         run: |
           npm ci
-          npm run build
-
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.4.3
-        with:
-          folder: build
-          branch: gh-pages
-            
+          npm run deploy
